@@ -1,0 +1,25 @@
+body{
+    background-color: #000705;
+    color: #f0f948;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    Scrollbar-color: #f0f948 #000705;
+    scrollbar-width: thin;
+    scrollbar-color: #f0f948 #000705;
+    scrollbar-width: thin;
+    scrollbar-color: #f0f948 #000705;
+    
+    
+}  
+.navbar {
+    background-color: #5704b0c8;
+    color: #f0f948;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+}
+.navbar a {
+    color: #f0f948;
+    text-decoration: underline;
+    margin-left: 10px;
+} 
