@@ -8,7 +8,7 @@ body{
     scrollbar-color: #f0f948 #000705;
     scrollbar-width: thin;
     scrollbar-color: #f0f948 #000705;
-    
+    scroll-behavior: smooth;
     
 }  
 .navbar {
@@ -22,4 +22,10 @@ body{
     color: #f0f948;
     text-decoration: underline;
     margin-left: 10px;
+
 } 
+*{
+    font-weight: 200;
+  font-family: Arial, sans-serif;
+    text-decoration-color: #f0f948;
+}
