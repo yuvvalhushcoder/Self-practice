@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --font-family: 'Arial', sans-serif;
+    }   
+    body {
+        font-family: var(--font-family);
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+    .card {
+        width: 300px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid var(--primary-color);
+        background-color: var(--secondary-color);
+
+    }
+</style>
+<body>
+    <button>Click me</button>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>This is a card with some content.</p>
+    </div>
+    
+</body>
+</html>
