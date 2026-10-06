@@ -160,4 +160,21 @@ a {
   font-size: 13px;
   color: #aaaaaa;
 }
+@media(min-width:450px){
+            .box{
+                background-color: blue;
+                width: 15rem;
+            }
+        }
+        @media(min-width:760px){
+            .box{
+                background-color: green;
+                height:15rem;
+            }
+        }
+        @media(min-width:1000px){
+            .box{
+                background-color: yellow;
+            }
+        }
 
