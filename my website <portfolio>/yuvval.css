@@ -28,4 +28,6 @@ body{
     font-weight: 200;
   font-family: Arial, sans-serif;
     text-decoration-color: #f0f948;
+    scroll-behavior: smooth;
+    
 }
