@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations </title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box1{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+    .box2{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      
+    }
+    .box3{
+    height: 100px;
+    width: 100px;
+      
+        background-color: green;
+
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 3px solid rgb(145, 59, 59);
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+    .box1:hover{
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    .box2:hover{
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+    .box3:hover{
+        transform: translateX(100px);
+        transition: 0.5s;
+    }
+    
+</style>
+<body>
+    <h2>Transform</h2>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    
+</body>
+</html>
