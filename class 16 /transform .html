@@ -10,17 +10,31 @@
     *{
         margin: 0;
         padding: 0;
+         auto-transition: 0.5s;
         box-sizing: border-box;
+    }
+    .box4{
+        height: 500px;
+        width: 500px;
+        background-color: gray;
+        animation-name: boxmoner;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 2s;
     }
     .box1{
         height: 100px;
         width: 100px;
         background-color: red;
+        animation: mymovex 5s infinite;
     }
     .box2{
         height: 100px;
         width: 100px;
         background-color: blue;
+        animation: alternate-reverse 5s infinite;
       
     }
     .box3{
@@ -28,6 +42,7 @@
     width: 100px;
       
         background-color: green;
+       
 
     }
     .container{
@@ -47,9 +62,20 @@
     .box2:hover{
         transform: scale(1.5);
         transition: 0.5s;
+        border-radius: 50%;
+
+        transition-property: transform, border-radius;
+        transition-duration: 0.5s, 1s;
+        transition-timing-function: ease-in-out, linear 2s;
+        
+
+     
     }
     .box3:hover{
-        transform: translateX(100px);
+        transform: translateX(-485px) rotate(985deg);
+        background-color: yellow;
+        animation: 0.5s linear 5s infinite;
+   
         transition: 0.5s;
     }
     
@@ -60,6 +86,7 @@
         <div class="box1"></div>
         <div class="box2"></div>
         <div class="box3"></div>
+        <div class="box4"></div>
     </div>
     
 </body>

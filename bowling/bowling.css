@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.big {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lane {
+    height: 250px;
+    width: 900px;
+    background-color: cyan;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    z-index: 1;
+    animation-name: ball-roll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.hole {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.one {
+    top: 15px;
+    left: 20px;
+}
+
+.two {
+    top: 15px;
+    left: 32px;
+}
+
+.three {
+    top: 28px;
+    left: 26px;
+}
+
+.pin {
+    height: 50px;
+    width: 20px;
+    background-color: white;
+    border-radius: 10px 10px 5px 5px;
+    border-top: 8px solid red;
+    position: absolute;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.front {
+    left: 700px;
+    top: 85px;
+    animation-name: fall-front;
+}
+
+.row2 {
+    left: 740px;
+}
+
+.row3 {
+    left: 780px;
+}
+
+.row2.up {
+    top: 55px;
+}
+
+.row2.down {
+    top: 115px;
+}
+
+.row3.up {
+    top: 25px;
+}
+
+.row3.down {
+    top: 145px;
+}
+
+.back {
+    top: 85px;
+    animation-name: fall-back;
+}
+
+.up {
+    animation-name: fall-up;
+}
+
+.down {
+    animation-name: fall-down;
+}
+
+@keyframes ball-roll {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(900px) rotate(720deg);
+    }
+}
+
+@keyframes fall-front {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    70% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px, 0px) rotate(90deg);
+    }
+}
+
+@keyframes fall-up {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    75% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(80px, -80px) rotate(-90deg);
+    }
+}
+
+@keyframes fall-down {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    75% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(80px, 80px) rotate(90deg);
+    }
+}
+
+@keyframes fall-back {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    79% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(80px, 0px) rotate(90deg);
+    }
+}
